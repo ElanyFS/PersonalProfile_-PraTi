@@ -1,0 +1,468 @@
+@import "normalize.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+:root {
+  --cor-primaria: #012030;
+  --cor-secundaria: #13678a;
+  --cor-destaque: #45c4b0;
+  --cor-suporte: #dafdba;
+  --cor-acento: #9aeba3;
+  --cor-texto-claro: #fff;
+}
+
+body {
+  color: var(--cor-texto-claro);
+  background: var(--cor-primaria);
+}
+
+/* Css Header */
+header {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 4rem;
+  background-color: aqua;
+}
+
+.header-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Main */
+
+/* Main- Section */
+section {
+  height: 80vh;
+}
+
+/* Section Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-info {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero .hero-info h1 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.hero .hero-info h3 {
+  font-weight: 100;
+}
+
+.hero .hero-info .titleEfect {
+  font-size: 2rem;
+}
+
+.hero .hero-info span {
+  color: var(--cor-acento);
+}
+
+.hero .hero-info p {
+  font-family: "Inconsolata", monospace;
+}
+
+.hero .hero-info .network {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero .hero-info .network a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-texto-claro);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #012030;
+}
+
+.hero .hero-info button {
+  background: var(--cor-texto-claro);
+  color: var(--cor-primaria);
+  border-radius: 20px;
+  width: 10rem;
+  border: none;
+  padding: 0.4rem 0.8rem;
+}
+
+.hero .hero-image {
+  text-align: center;
+}
+
+.hero .hero-image img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Section About */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-me h2 {
+  font-weight: 100;
+}
+
+.about-me p {
+  width: 60%;
+  text-align: justify;
+  font-family: "Inconsolata", monospace;
+  line-height: 1.6;
+}
+
+/* Section Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 3;
+  padding: 0.5rem 1rem;
+}
+
+.projects h2 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.projects .container {
+  margin-top: 1rem;
+}
+
+.projects .container .carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 1rem; /* ou qualquer valor desejado */
+  padding: 1rem; /* opcional para espaçamento interno */
+}
+
+.projects .container .carousel > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto; /* impede que os itens quebrem linha */
+}
+
+.projects .container .carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.projects .container .carousel .carousel-card-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 1.25rem;
+  width: 25%;
+  border: 1px solid #ccc; /* ou personalize como preferir */
+  padding: 0.25rem;
+  gap: 0.75rem; /* espaço entre os filhos */
+}
+
+.projects .container .carousel .carousel-card-element img {
+  max-height: 9rem;
+}
+
+.projects .container .carousel .carousel-card-element .card-element-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  gap: 0.5rem;
+}
+
+.projects .container .carousel .carousel-card-element .card-element-info h1 {
+  font-size: 1.25rem; /* equivalente a 20px */
+  line-height: 1.75rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+.projects .container .carousel .carousel-card-element .card-element-info p {
+  font-size: 12px;
+  padding: 0 1rem;
+  font-family: "Inconsolata", monospace;
+  text-align: justify;
+}
+
+.projects .container .carousel .carousel-card-element .card-element-info ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.projects .container .carousel .carousel-card-element .card-element-info ul li {
+}
+
+.projects
+  .container
+  .carousel
+  .carousel-card-element
+  .card-element-info
+  ul
+  li
+  img {
+  width: 1.75rem; /* 1.75rem = 28px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects
+  .container
+  .carousel
+  .carousel-card-element
+  .card-element-info
+  .card-element-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* 8px */
+  margin-top: auto;
+}
+
+.projects
+  .container
+  .carousel
+  .carousel-card-element
+  .card-element-info
+  .card-element-buttons
+  a {
+  border-width: 2px;
+  padding-left: 0.5rem; /* px-2 */
+  padding-right: 0.5rem;
+  padding-top: 0.25rem; /* py-1 */
+  padding-bottom: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  background: var(--cor-acento);
+}
+
+.projects .buttons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects .buttons button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0.3rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--cor-acento);
+  cursor: pointer;
+}
+
+/* Responsivo para ≥ 640px (sm) */
+@media (min-width: 640px) {
+  .projects .container .carousel .carousel-card-element {
+    min-width: 48%;
+  }
+}
+
+/* Responsivo para ≥ 1024px (lg) */
+@media (min-width: 1024px) {
+  .projects .container .carousel .carousel-card-element {
+    min-width: 30%;
+  }
+}
+
+/* Section contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  gap: 3;
+  padding: 0 2rem;
+}
+
+.contact h1 {
+  font-size: 1rem;
+}
+
+.contact .layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact .formContact {
+  width: 60%;
+}
+
+.contact .formContact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.contact .formContact .group-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact .formContact .group-input label {
+  font-weight: 100;
+}
+
+.contact .formContact .group-input input,
+.contact .formContact .group-input textarea {
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: none;
+}
+
+.contact .newtwork {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 2rem;
+}
+
+.contact .newtwork h1 {
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 100;
+  /* md w-4/6 */
+}
+
+.contact .newtwork ul {
+  display: flex;
+  /* flex: 1; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .newtwork > ul > li {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 4px;
+  background: var(--cor-destaque);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-texto-claro);
+}
+
+.contact .newtwork ul li a {
+  color: var(--cor-texto-claro);
+}
+
+/* Footer */
+footer {
+  color: #e4e4e7; /* text-zinc-200 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem; /* gap-4 = 16px */
+  padding-top: 0.5rem; /* py-2 = 8px no top... */
+  padding-bottom: 0.5rem; /* ...e no bottom */
+}
+
+footer .menuFooter {
+  width: 83.333333%; /* w-5/6 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 = 8px */
+}
+
+footer .menuFooter p {
+  
+}
+
+footer .menuFooter ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* gap-4 = 16px */
+  flex-wrap: wrap;
+}
+
+footer .menuFooter ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+footer .menuFooter ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+footer .menuFooter ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: left;
+  transition: scale 0.35s;
+}
+
+footer .menuFooter ul li:hover::before {
+  scale: 1;
+}
+
+/* Breakpoint sm: 640px */
+@media (min-width: 640px) {
+  .footer .menuFooter {
+    justify-content: space-between;
+  }
+}
+
+/* Breakpoint lg: 1024px */
+@media (min-width: 1024px) {
+  .footer .menuFooter {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

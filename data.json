@@ -1,0 +1,105 @@
+[
+  {
+    "pathImg": "/img/2.png",
+    "titulo": "Sistema de Reclamações e Sugestões",
+    "detalhes": "Aplicação web para gestão de denúncias e solicitações urbanas, com React, Firebase e Leaflet.js. Interface responsiva que permite registrar, acompanhar e visualizar ocorrências em mapa, além de painel administrativo para análise e relatórios.",
+    "pathCodigo": "",
+    "pathUrl": "https://sts-complaints.vercel.app/",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/374144/typescript.svg",
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/373595/firebase.svg",
+      "https://www.svgrepo.com/show/376337/node-js.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/6.png",
+    "titulo": "Footfy",
+    "detalhes": "Aplicação web de estatísticas esportivas, desenvolvida com Node.js, Angular e Firebase. Interface responsiva que organiza e apresenta dados esportivos de forma clara e acessível.",
+    "pathCodigo": "",
+    "pathUrl": "https://www.footfy.info/",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/452156/angular.svg",
+      "https://www.svgrepo.com/show/373595/firebase.svg",
+      "https://www.svgrepo.com/show/376337/node-js.svg",
+      "https://www.svgrepo.com/show/353498/bootstrap.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/4.png",
+    "titulo": "Coin Craft",
+    "detalhes": "Jogo educativo para aprendizado financeiro, com foco em habilidades de orçamento e controle de gastos. Inclui landing page para cadastro de novos jogadores interessados em educação financeira.",
+    "pathCodigo": "https://github.com/KelvynReis/coincraft-trilhas",
+    "pathUrl": "https://coincraft-trilhas.vercel.app/",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/374144/typescript.svg",
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/374167/vite.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/3.png",
+    "titulo": "NF Semi Joias",
+    "detalhes": "Aplicação web para loja de semijoias, com landing page interativa e páginas dedicadas à exibição de produtos organizados por categorias, proporcionando navegação intuitiva.",
+    "pathCodigo": "",
+    "pathUrl": "https://nfsemijoias.vercel.app/",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/374144/typescript.svg",
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/374167/vite.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/5.png",
+    "titulo": "Gerenciador de Metas",
+    "detalhes": "Aplicação full-stack para gerenciamento de metas, com back-end em Node.js, Fastify e PostgreSQL, e front-end com React, Vite e TailwindCSS. Utiliza Docker e Zod para validação.",
+    "pathCodigo": "https://github.com/ElanyFS/nlw-web",
+    "pathUrl": "",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/354119/nodejs-icon.svg",
+      "https://www.svgrepo.com/show/374144/typescript.svg",
+      "https://www.svgrepo.com/show/353729/fastify-icon.svg",
+      "https://www.svgrepo.com/show/354200/postgresql.svg",
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/374167/vite.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/7.png",
+    "titulo": "Cine Search",
+    "detalhes": "Aplicação front-end para busca de filmes e séries, desenvolvida com React e Vite. Consome API pública, organiza dados por categorias e utiliza TailwindCSS e TanStack Query para estilização e gerenciamento de dados.",
+    "pathCodigo": "https://github.com/ElanyFS/SearchMovies",
+    "pathUrl": "https://cine-moviee.vercel.app/",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/374144/typescript.svg",
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/374167/vite.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/optimustech.gif",
+    "titulo": "OptimusTech",
+    "detalhes": "Projeto desenvolvido para o desafio #7DaysOfCode: página de carreiras para empresa de TI, com layout baseado no Figma, destacando vagas e facilitando processos de recrutamento.",
+    "pathCodigo": "https://github.com/ElanyFS/landing-page",
+    "pathUrl": "#",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/452228/html-5.svg",
+      "https://www.svgrepo.com/show/452185/css-3.svg",
+      "https://www.svgrepo.com/show/353925/javascript.svg"
+    ]
+  },
+  {
+    "pathImg": "/img/1.png",
+    "titulo": "To Do List",
+    "detalhes": "Aplicação de lista de tarefas para organização diária, com destaque para tarefas atrasadas. Interface intuitiva e responsiva, desenvolvida com React, Vite e TailwindCSS.",
+    "pathCodigo": "https://github.com/ElanyFS/ToDoList/",
+    "pathUrl": "https://to-do-list-trilha.vercel.app/",
+    "tecnologias": [
+      "https://www.svgrepo.com/show/374144"
+    ]
+}]

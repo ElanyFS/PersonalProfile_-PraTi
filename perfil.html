@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="">
+      <a href="#" class="soon"> Elany </a>
+      <nav class="header-navigation">
+        <ul>
+          <li class="header-navigation-iten">About Me</li>
+          <li class="header-navigation-iten">Skills</li>
+          <li class="header-navigation-iten">Projects</li>
+          <li class="header-navigation-iten">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <main>
+        <section id="hero" class="hero">
+          <div class="hero-info">
+            <h3>Hello, It`s Me</h3>
+
+            <h1>Artist Nemo</h1>
+
+            <h3 class="titleEfect">
+              I`m a <span>[Efeito digitação alternando]</span>
+            </h3>
+
+            <p>
+              Please hold your breath as we dive into a world full of creativy
+              with designer Nemo.
+            </p>
+
+            <aside class="network">
+              <a href="" class="linkedin">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="" class="instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="github">
+                <i class="bi bi-github"></i>
+              </a>
+            </aside>
+
+            <button>Meu Portfólio</button>
+          </div>
+
+          <div class="hero-image">
+            <img src="/img/perfil.png" alt="" />
+          </div>
+        </section>
+
+        <section id="about-me" class="about-me">
+          <h2>SOBRE MIM <i class="bi bi-person"></i></h2>
+          <p>
+            Formada em Engenharia de Computação pela Universidade Ceuma e, ao
+            longo da minha trajetória, tenho focado em JavaScript, React,
+            Tailwind CSS e HTML5. Tenho um olhar atento aos detalhes e busco
+            sempre criar soluções que não apenas atendam às expectativas, mas
+            que também proporcionem uma experiência de usuário intuitiva e
+            eficiente. Acredito que a comunicação clara e eficaz é essencial,
+            seja no trabalho em equipe, no atendimento ao cliente ou na
+            resolução de desafios técnicos. Estou constantemente em busca de
+            novos desafios e oportunidades para expandir meus conhecimentos e
+            crescer profissionalmente. Valorizo a entrega de soluções que
+            impactem positivamente o usuário e, em minhas experiências
+            anteriores, busquei sempre manter um alto padrão de qualidade e
+            colaboração, com foco no atendimento às necessidades e na gestão de
+            problemas técnicos de forma eficaz.
+          </p>
+        </section>
+        <section id="skills" class="skills"></section>
+        <section id="projects" class="projects">
+          <h2 class="">Portfólio</h2>
+
+          <div class="container">
+            <div class="carousel" id="carousel"></div>
+          </div>
+
+          <div class="buttons">
+            <button class="" id="buttonLeft" onclick="handleLeft()">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="" id="buttonRigth" onclick="handleRigth()">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <h1 class="">Contato</h1>
+
+          <div class="layout">
+            <div class="formContact">
+              <form action="">
+                <div class="group-input">
+                  <label for="">Name</label>
+                  <input type="text" />
+                </div>
+
+                <div class="group-input">
+                  <label for="">E-mail</label>
+                  <input type="email" />
+                </div>
+
+                <div class="group-input">
+                  <label for="">Mensagem</label>
+                  <textarea name="" id=""></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="newtwork">
+              <h1 class="">Follow me</h1>
+              <ul class="">
+                <li class="">
+                  <a
+                    href="https://www.instagram.com/e.bsouzaa/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href="https://www.linkedin.com/in/ebsouzaa/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="https://github.com/ElanyFS/" target="_blank">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#" target="_blank">
+                    <i class="bi bi-discord"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="menuFooter">
+        <p>Elany Ferreira</p>
+        <ul class="">
+          <li class="link-footer" onClick="scrollToSection('hero')">Home</li>
+          <li class="link-footer" onClick="scrollToSection('about-me')">
+            About
+          </li>
+          <li class="link-footer" onClick="scrollToSection('projects')">
+            Projects
+          </li>
+          <li class="link-footer" onClick="scrollToSection('skills')">
+            Skills
+          </li>
+          <li class="link-footer" onClick="scrollToSection('certificates')">
+            Certificates
+          </li>
+          <li class="link-footer" onClick="scrollToSection('contact')">
+            Contact
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="font-poppins text-sm">@ <span class="data" id="data"></span> Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
