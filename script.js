@@ -1,6 +1,8 @@
 const carouselDiv = document.getElementById("carousel");
 const buttonLeft = document.getElementById("buttonLeft");
 const buttonRigth = document.getElementById("buttonRigth");
+const header = document.querySelector("header");
+const navMenu = document.getElementById('ulNav');
 
 const newData = new Date().getFullYear();
 
@@ -78,6 +80,65 @@ function scrollToSection(id) {
   }
 }
 
-const spanData = document.getElementById('data');
+const spanData = document.getElementById("data");
 
-spanData.innerText = newData
+spanData.innerText = newData;
+
+// Header
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    header.classList.add("header-fixo");
+  } else {
+    header.classList.remove("header-fixo");
+  }
+});
+
+// Maquina digitalizadora
+const texts = ["Desenvolvimento Web", "FrontEnd", "React", "Angular", "JavaScript", "Next.Js", "Node.Js"];
+const typingSpeed = 150;
+const deletingSpeed = 80;
+const pauseDuration = 2000;
+
+let currentText = "";
+let textIndex = 0;
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function type() {
+  const fullText = texts[textIndex];
+
+  if (!isDeleting) {
+    currentText = fullText.substring(0, currentText.length + 1);
+  } else {
+    currentText = fullText.substring(0, currentText.length - 1);
+  }
+
+  typingElement.textContent = currentText;
+
+  let timeout = isDeleting ? deletingSpeed : typingSpeed;
+
+  if (!isDeleting && currentText === fullText) {
+    timeout = pauseDuration;
+    isDeleting = true;
+  } else if (isDeleting && currentText === "") {
+    isDeleting = false;
+    textIndex = (textIndex + 1) % texts.length;
+    timeout = typingSpeed;
+  }
+
+  setTimeout(type, timeout);
+}
+
+type(); // Inicia a animação
+
+
+// Menu Mobile
+
+function showMenuMobile(){
+  navMenu.classList.toggle("nav-mobile");
+
+  console.log('cliclou');
+  
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,33 +19,54 @@
   </head>
   <body>
     <header class="">
-      <a href="#" class="soon"> Elany </a>
+      <a href="#" class="soon" onClick="scrollToSection('hero')"> ES </a>
+
       <nav class="header-navigation">
-        <ul>
-          <li class="header-navigation-iten">About Me</li>
-          <li class="header-navigation-iten">Skills</li>
-          <li class="header-navigation-iten">Projects</li>
-          <li class="header-navigation-iten">Contact</li>
+        <ul id="ulNav">
+          <li
+            class="header-navigation-iten"
+            onClick="scrollToSection('about-me')"
+          >
+            About Me
+          </li>
+          <li
+            class="header-navigation-iten"
+            onClick="scrollToSection('skills')"
+          >
+            Skills
+          </li>
+          <li
+            class="header-navigation-iten"
+            onClick="scrollToSection('projects')"
+          >
+            Projects
+          </li>
+          <li
+            class="header-navigation-iten"
+            onClick="scrollToSection('contact')"
+          >
+            Contact
+          </li>
         </ul>
       </nav>
+
+      <button onclick="showMenuMobile()">
+        <i class="bi bi-list"></i>
+      </button>
     </header>
 
     <div class="layout">
       <main>
         <section id="hero" class="hero">
           <div class="hero-info">
-            <h3>Hello, It`s Me</h3>
+            <h3>Olá, eu sou</h3>
 
-            <h1>Artist Nemo</h1>
+            <h1>Elany Souza</h1>
 
             <h3 class="titleEfect">
-              I`m a <span>[Efeito digitação alternando]</span>
+              Desenvolvedora especializada em <br />
+              <span class="typing" id="typing"></span>
             </h3>
-
-            <p>
-              Please hold your breath as we dive into a world full of creativy
-              with designer Nemo.
-            </p>
 
             <aside class="network">
               <a href="" class="linkedin">
@@ -85,8 +106,16 @@
             colaboração, com foco no atendimento às necessidades e na gestão de
             problemas técnicos de forma eficaz.
           </p>
+
+          <div class="btns">
+            <a class="" href=""> Linkedin </a>
+
+            <a class="" href=""> Currículo </a>
+          </div>
         </section>
+
         <section id="skills" class="skills"></section>
+
         <section id="projects" class="projects">
           <h2 class="">Portfólio</h2>
 
@@ -105,9 +134,9 @@
         </section>
 
         <section id="contact" class="contact">
-          <h1 class="">Contato</h1>
+          <h2 class="">Contato</h2>
 
-          <div class="layout">
+          <div class="layoutContact">
             <div class="formContact">
               <form action="">
                 <div class="group-input">
@@ -177,9 +206,6 @@
           <li class="link-footer" onClick="scrollToSection('skills')">
             Skills
           </li>
-          <li class="link-footer" onClick="scrollToSection('certificates')">
-            Certificates
-          </li>
           <li class="link-footer" onClick="scrollToSection('contact')">
             Contact
           </li>
@@ -187,7 +213,9 @@
       </div>
 
       <div>
-        <p className="font-poppins text-sm">@ <span class="data" id="data"></span> Todos os direitos reservados.</p>
+        <p className="font-poppins text-sm">
+          @ <span class="data" id="data"></span> Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   </body>
